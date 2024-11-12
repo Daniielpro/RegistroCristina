@@ -30,6 +30,7 @@ Para clonar este repositorio en tu máquina local, sigue estos pasos:
 Ejecuta el siguiente comando en tu terminal para iniciar un servidor de desarrollo PHP en el puerto 8081:
 
     php -S localhost:8081
+    
     Luego, abre en tu navegador la URL http://localhost:8081
 
 3. Usar la aplicación
