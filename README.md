@@ -1,44 +1,39 @@
-## Registro de Usuarios en PHP
-    Este es un proyecto simple en PHP que permite a los usuarios ingresar sus datos (cédula, nombre, correo y teléfono) y los almacena en una sesión para mostrarlos en la misma página. La aplicación está construida utilizando PHP puro con una interfaz sencilla en HTML y CSS.
-
-## Estructura del Proyecto
-
-    registro/
+## User Registration 
+    This is a simple PHP project that allows users to enter their data (ID, name, email and phone) and stores them in a session to display them on the same page. The application is built using pure PHP with a simple interface in HTML and CSS.
+## Project Structure
+    registration/
     │
-    ├── index.php          # Archivo principal que contiene el formulario y la lógica de registro
-    └── README.md             # Documento de descripción del proyecto (para compartir o colaborar)
-## Requisitos
-- PHP 7.0 o superior.
-- Un navegador web para visualizar el formulario HTML.
-## Instrucciones
+    ├── index.php # # Main file containing the form and registration logic.
+    └─── README.md # Project description document (for sharing or collaboration).
+## Requirements.
+- PHP 7.0 or higher.
+- A web browser to display the HTML form.
+## Instructions
   
-##  Clonar el repositorio
-Para clonar este repositorio en tu máquina local, sigue estos pasos:
-1. Instala Git.
-2. Abre tu terminal o símbolo del sistema.
-3. Navega al directorio donde deseas clonar el proyecto. Usa el comando cd para dirigirte al directorio deseado. Por ejemplo:
-
-    cd ruta/del/directorio
-4. Clona el repositorio ejecutando el siguiente comando:
-
+## Clone the repository
+To clone this repository on your local machine, follow these steps:
+1. Install Git.
+2. Open your terminal or command prompt.
+3. Navigate to the directory where you want to clone the project. Use the cd command to navigate to the desired directory. For example:
+    cd path/dir/directory
+4. Clone the repository by running the following command:
     git clone https://github.com/Cristina-Colcha/Registro.git
-##  Ejecutar el Proyecto
-1. Accede al repositorio clonado. Una vez clonado el repositorio, ingresa a la carpeta del proyecto:
-
-    cd registro
-2. Ejecuta el archivo index.php directamente en tu navegador. Abre el archivo desde tu navegador:
-Ejecuta el siguiente comando en tu terminal para iniciar un servidor de desarrollo PHP en el puerto 8081:
-
+## Run the Project
+1. Access the cloned repository. Once the repository has been cloned, access the project folder:
+    cd registry
+2. Run the index.php file directly in your browser. Open the file from your browser:
+Run the following command in your terminal to start a PHP development server on port 8081:
     php -S localhost:8081
     
-    Luego, abre en tu navegador la URL http://localhost:8081
+    Then, open the URL http://localhost:8081 in your browser.
+3. Using the application
+- Enter a user's data in the form.
+- Click on the “Register” button.
+The table will show all users registered so far.
+## Contribute
+If you wish to contribute to the project, follow the steps above to clone the repository, create a new branch for your changes and then open a Pull Request.
 
-3. Usar la aplicación
--  Ingresa los datos de un usuario en el formulario.
--  Haz clic en el botón "Registrar".
-La tabla mostrará todos los usuarios registrados hasta el momento.
-## Contribuir
-Si deseas contribuir al proyecto, sigue los pasos anteriores para clonar el repositorio, crea una nueva rama para tus cambios y luego abre una Pull Request.
+This README includes instructions for cloning, configuring and running the project in a local environment without a dedicated web server.
 
 
-Este README incluye las instrucciones para clonar, configurar y ejecutar el proyecto en un entorno local sin un servidor web específico.
+Translated with DeepL.com (free version)
