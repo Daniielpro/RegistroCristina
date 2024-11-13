@@ -15,8 +15,8 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Configurar Apache para escuchar en el puerto definido en la variable de entorno PORT
 # y exponer el puerto de la aplicación
-ENV PORT 80
-EXPOSE 80
+ENV PORT 9000
+EXPOSE 9000
 
 # Iniciar el servidor Apache cuando el contenedor se ejecute
 CMD ["apache2-foreground"]
