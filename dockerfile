@@ -13,7 +13,9 @@ RUN a2enmod rewrite
 # Configurar el ServerName para evitar la advertencia
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
-# Exponer el puerto 80 para acceso HTTP
+# Configurar Apache para escuchar en el puerto definido en la variable de entorno PORT
+# y exponer el puerto de la aplicación
+ENV PORT 80
 EXPOSE 80
 
 # Iniciar el servidor Apache cuando el contenedor se ejecute
