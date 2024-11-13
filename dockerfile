@@ -1,25 +1,17 @@
-# Usar una imagen base con PHP y Apache
-FROM php:8.1-apache
+# Use the official PHP image with FPM
+FROM php:8.2-fpm
 
-# Establecer el directorio de trabajo en el contenedor
+# Set the working directory
 WORKDIR /var/www/html
 
-# Copiar los archivos del proyecto en el contenedor
-COPY . /var/www/html/
+# Copy application files
+COPY . .
 
-# Habilitar mod_rewrite (opcional, si tu aplicación lo requiere)
-RUN a2enmod rewrite
+# Install any necessary PHP extensions
+RUN docker-php-ext-install pdo pdo_mysql
 
-# Cambiar el puerto en el que Apache escucha
-RUN sed -i 's/80/8081/' /etc/apache2/ports.conf
-RUN sed -i 's/:80/:8081/' /etc/apache2/sites-available/000-default.conf
+# Expose port 9000
+EXPOSE 9000
 
-# Configurar el ServerName para evitar la advertencia
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-
-# Exponer el puerto 8081 para acceso HTTP
-EXPOSE 8081
-
-# Iniciar el servidor Apache cuando el contenedor se ejecute
-CMD ["apache2-foreground"]
-
+# Start PHP-FPM
+CMD ["php-fpm"]
