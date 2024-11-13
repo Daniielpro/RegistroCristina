@@ -14,7 +14,8 @@ RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Exponer el puerto 80 para acceso HTTP
-EXPOSE 80
+ENV PORT 9000
+EXPOSE 9000
 
 # Iniciar el servidor Apache cuando el contenedor se ejecute
 CMD ["apache2-foreground"]
